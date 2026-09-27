@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="mn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Facebook Profile</title>
+        <style>
+            body {
+                margin: 0;
+                background-color: #dfe3ee;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                color: #111;
+            }
+            a { color: #3b5998; text-decoration: none; }
+            a:hover { text-decoration: underline; }
+            .page {
+                width: 760px;
+                margin: 12px auto;
+                background: #fff;
+                border: 3px solid #fff;
+                border-collapse: collapse;
+            }
+            .top { background: #3b5998; color: #fff; height: 58px; }
+            .top-logo {
+                width: 250px;
+                vertical-align: middle;
+                padding: 5px 12px;
+                font-family: Georgia, "Times New Roman", serif;
+                font-size: 29px;
+                font-weight: bold;
+                white-space: nowrap;
+            }
+            .top-logo span { font-weight: normal; }
+            .top-nav {
+                vertical-align: bottom;
+                padding: 0 10px 7px 0;
+                text-align: right;
+                font-size: 11px;
+            }
+            .top-nav a { color: #fff; margin-left: 10px; }
+            .profile-bar { background: #3b5998; color: #fff; font-weight: bold; padding: 4px 6px; }
+            .profile-bar-right { text-align: right; }
+            .left-col {
+                width: 135px; vertical-align: top;
+                border-right: 2px solid #c7ceda;
+                padding: 9px; background: #fff;
+            }
+            .middle-col { width: 250px; vertical-align: top; padding: 8px 5px 20px 8px; }
+            .right-col { width: 325px; vertical-align: top; padding: 8px 8px 20px 5px; }
+            .search-box {
+                border: 1px solid #aeb6c3;
+                background: #f4f6f9;
+                padding: 6px;
+                margin-bottom: 12px;
+            }
+            .search-box input[type="text"] { width: 86px; padding: 3px; border: 1px solid #aeb6c3; font-size: 11px; }
+            .search-box input[type="submit"] { background: #3b5998; color: #fff; border: 1px solid #29487d; padding: 3px 6px; font-size: 10px; }
+            .menu a { display: block; padding: 2px 0; font-size: 11px; }
+            .menu-title { color: #777; font-weight: bold; margin-top: 8px; margin-bottom: 4px; }
+            .box { border: 1px solid #aeb6c3; margin-bottom: 8px; background: #fff; }
+            .box-title { background: #5a78ad; color: #fff; font-weight: bold; padding: 3px 5px; }
+            .box-content { padding: 5px; }
+            .picture { width: 208px; height: 158px; object-fit: cover; border: 1px solid #444; padding: 4px; background: #f3f3f3; }
+            .edit { float: right; color: #fff; font-weight: normal; }
+            .info-table { width: 100%; border-collapse: collapse; }
+            .info-table td { padding: 2px 4px; vertical-align: top; }
+            .label { width: 100px; color: #333; font-weight: bold; }
+            .value { color: #3b5998; }
+            .subhead { color: #111; font-weight: bold; padding-top: 5px; border-bottom: 1px dotted #999; }
+            .action-row { border: 1px solid #aeb6c3; padding: 4px 7px; color: #3b5998; background: #f7f8fa; }
+            .action-row + .action-row { border-top: none; }
+            .center-text { text-align: center; }
+            .tiny { font-size: 10px; color: #666; }
+            .footer { background: #f1f3f6; border-top: 1px solid #b8c0cc; text-align: center; padding: 7px; font-size: 10px; color: #777; }
+        </style>
+    </head>
+    <body>
+        <table class="page" cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td class="top-logo">facebook</td>
+                <td colspan="2" class="top-nav">
+                    <a href="#">home</a>
+                    <a href="#">search</a>
+                    <a href="#">global</a>
+                    <a href="#">social net</a>
+                    <a href="#">invite</a>
+                    <a href="#">faq</a>
+                    <a href="#">logout</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="profile-bar" colspan="2">Р.Эрдэнэцогт's Profile (This is you)</td>
+                <td class="profile-bar profile-bar-right">Scranton</td>
+            </tr>
+            <tr>
+                <td class="left-col" rowspan="2">
+                    <div class="search-box">
+                        <input type="text" placeholder="quick search">
+                        <input type="submit" value="go">
+                    </div>
+                    <div class="menu-title">My Profile</div>
+                    <div class="menu">
+                        <a href="#">My Profile [ edit ]</a>
+                        <a href="#">My Groups</a>
+                        <a href="#">My Friends</a>
+                        <a href="#">My Messages</a>
+                        <a href="#">My Away Message</a>
+                        <a href="#">My Mobile Info</a>
+                        <a href="#">My Account</a>
+                        <a href="#">My Privacy</a>
+                    </div>
+                    <br>
+                    <div class="menu-title">Quick Links</div>
+                    <div class="menu">
+                        <a href="#">Home</a>
+                        <a href="#">Search</a>
+                        <a href="#">Invite</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </td>
+                <td class="middle-col">
+                    <div class="box">
+                        <div class="box-title">Picture <span class="edit">[ edit ]</span></div>
+                        <div class="box-content center-text">
+                            <img class="picture" src="images/profile.jfif" alt="зураг">
+                            <p class="tiny">Profile picture.</p>
+                        </div>
+                    </div>
+                    <div class="action-row"><a href="#">Visualize My Friends</a></div>
+                    <div class="action-row"><a href="#">Edit My Profile</a></div>
+                    <div class="action-row"><a href="#">My Account Preferences</a></div>
+                    <div class="action-row"><a href="#">My Privacy Preferences</a></div>
+                    <br>
+                    <div class="box">
+                        <div class="box-title">Connection</div>
+                        <div class="box-content center-text">This is you.</div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">Access</div>
+                        <div class="box-content">Р.Эрдэнэцогт is currently logged in from a non-residential location.</div>
+                    </div>
+                    <div class="box">
+                        <div class="box-title">Other Schools <span class="edit">[ edit ]</span></div>
+                        <div class="box-content">
+                            <a href="#">NUM</a><br>
+                            <a href="#">University Community</a>
+                        </div>
+                    </div>
+                </td>
+                <td class="right-col">
+                    <div class="box">
+                        <div class="box-title">Information <span class="edit">[ edit ]</span></div>
+                        <div class="box-content">
+                            <table class="info-table">
+                                <tr><td colspan="2" class="subhead">Account Info:</td></tr>
+                                <tr><td class="label">Name:</td><td class="value">Р.Эрдэнэцогт</td></tr>
+                                <tr><td class="label">Member Since:</td><td class="value">January 12, 2025</td></tr>
+                                <tr><td class="label">Last Update:</td><td class="value">September 27, 2026</td></tr>
+                                <tr><td colspan="2" class="subhead">Basic Info:</td></tr>
+                                <tr><td class="label">Email:</td><td class="value">student@example.com</td></tr>
+                                <tr><td class="label">Status:</td><td class="value">Student</td></tr>
+                                <tr><td class="label">Sex:</td><td class="value">Male</td></tr>
+                                <tr><td class="label">Birth Year:</td><td class="value">2006</td></tr>
+                                <tr><td class="label">Concentration:</td><td class="value">Computer Science<br>Chess</td></tr>
+                                <tr><td class="label">Phone:</td><td class="value">(976) 8052-2698</td></tr>
+                                <tr><td class="label">High School:</td><td class="value">Prefer not say</td></tr>
+                                <tr><td colspan="2" class="subhead">Extended Info:</td></tr>
+                                <tr><td class="label">Screenname:</td><td class="value">Р.Эрдэнэцогт</td></tr>
+                                <tr><td class="label">Looking for:</td><td class="value">Friendship<br>Dating<br>A Relationship<br>Random play<br>Whatever I can get</td></tr>
+                                <tr><td class="label">Interested In:</td><td class="value">Learning, technology, friends</td></tr>
+                                <tr><td class="label">Relationship Status:</td><td class="value">Single</td></tr>
+                                <tr><td class="label">Interests:</td><td class="value">Programming,  Basketball, Chess, Movies, Music</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="footer">
+                    <small>
+                        &copy; 2026 Р.Эрдэнэцогт.
+                    </small>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
