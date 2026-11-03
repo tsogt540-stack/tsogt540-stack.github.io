@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="mn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Лаборатори 8</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1> Лаборатори 8</h1>
+        <hr>
+        <main class="container">
+            <section class="card">
+                <h2>Бодлого 1. Цифрүүдийн нийлбэр</h2>
+                <p>Сөрөг биш бүхэл тоо авч цифрүүдийн нийлбэрийг олж, тухайн нийлбэр палиндром эсэхийг шалгана.</p>
+
+                <form id="form1">
+                    <label for="number1">Тоо оруулна уу:</label>
+                    <input type="number" id="number1" min="0" step="1" required>
+
+                    <button type="submit">Тооцоолох</button>
+                </form>
+
+                <p id="result1"></p>
+            </section>
+
+            <section class="card">
+                <h2>Бодлого 2. Гүйцэх хугацааг тооцоолох</h2>
+                <p>Чоно 25 км/ц, туулай 18 км/ц тогтмол хурдтайгаар нэг чиглэлд гүйнэ. Чоно туулайн араас хөөж байгаа бөгөөд тэдгээрийн хоорондох анхны зайг метрээр гараас авна. Чоно туулайг хэдэн минут, хэдэн секундын дараа гүйцэхийг ол. Нийт хугацааг хамгийн ойрын бүхэл секундэд тоймло.</p>
+
+                <form id="form2">
+                    <label for="distance">Чоно болон туулайны хоорондох зайг оруулна уу:</label>
+                    <input type="number" id="distance" min="0" step="any" required>
+
+                    <button type="submit">Тооцоолох</button>
+                </form>
+                <p id="result2"></p>
+            </section>
+
+            <section class="card">
+                <h2>Бодлого 3. Байршил олох</h2>
+                <p>Байшин 9 давхар, 3 орцтой бөгөөд орц бүрийн давхар тус бүрд 4 айл байрладаг. Тоотуудыг нэгдүгээр орцны нэгдүгээр давхраас эхлэн давхар бүрд дараалуулж, дараагийн орцод үргэлжлүүлэн 1–108 хүртэл дугаарласан. Гараас өгсөн тоот нь хэддүгээр орцны, хэддүгээр давхрын, тухайн давхар дахь хэд дэх хаалга болохыг ол.</p>
+
+                <form id="form3">
+                    <label for="apartment">Тоотыг оруулна уу:</label>
+                    <input type="number" id="apartment" min="1" max="108" step="1" required>
+
+                    <button type="submit">Тооцоолох</button>
+                </form>
+
+                <p id="result3"></p>
+            </section>
+
+            <section class="card">
+                <h2>Бодлого 4. ХБЕК</h2>
+                <p>Гараас 5 эерэг бүхэл тоо авч, массивт хадгал. Эдгээр тооны ХБЕК-ыг олох.</p>
+
+                <form id="form4">
+                    <label for="number4_1">1-р тоо:</label>
+                    <input type="number" id="number4_1" min="1" step="1" required>
+
+                    <label for="number4_2">2-р тоо:</label>
+                    <input type="number" id="number4_2" min="1" step="1" required>
+
+                    <label for="number4_3">3-р тоо:</label>
+                    <input type="number" id="number4_3" min="1" step="1" required>
+
+                    <label for="number4_4">4-р тоо:</label>
+                    <input type="number" id="number4_4" min="1" step="1" required>
+
+                    <label for="number4_5">5-р тоо:</label>
+                    <input type="number" id="number4_5" min="1" step="1" required>
+
+                    <button type="submit">Тооцоолох</button>
+                </form>
+                <p id="result4"></p>
+            </section>
+
+            <section class="card">
+                <h2>Бодлого 5. Цагаас хамаарсан тооцоо</h2>
+                <p>Вэб хуудсанд хэрэглэгчээс тоо авч, хэрэглэгчийн төхөөрөмжийн тухайн үеийн цагаас хамааран дараах үйлдлийг гүйцэтгэ. 06:00 ≤ цаг &lt; 12:00: Оруулсан тооны квадратыг ол. 18:00 ≤ цаг &lt; 24:00: Оруулсан тооны квадрат язгуурыг ол. Сөрөг тоо оруулбал бодит тоон утгатай квадрат язгуургүй болохыг мэдэгд. Бусад цагт: “Тооцоолол хийх цаг болоогүй байна” гэсэн мэдэгдэл харуул.</p>
+
+                <form id="form5">
+                    <label for="number5">Тоо оруулна уу:</label>
+                    <input type="number" id="number5" step="any" required>
+                    <button type="submit">Тооцоолох</button>
+                </form>
+                <p id="result5"></p>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+</html>
