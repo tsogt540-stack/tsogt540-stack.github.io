@@ -23,7 +23,7 @@ form1.addEventListener("submit", function(event) {
         reversed = reversed * 10 + (temp % 10);
         temp = Math.floor(temp / 10);
     }
-    if(originalSum === reversed){
+    if(originalSum == reversed){
         result1.textContent = "Оруулсан тоо: " + inputValue + "\nЦифрүүдийн нийлбэр: " + sum + "\n" + sum + "  Палиндром тоо мөн"
     } else {
         result1.textContent = "Оруулсан тоо: " + inputValue + "\nЦифрүүдийн нийлбэр: " + sum + "\n" + sum + "  Палиндром тоо биш"
